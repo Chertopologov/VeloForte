@@ -26,41 +26,148 @@
         <h1>VELOSERVIS veloforte</h2>
         <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
             <div class="nav-buttons">
-                <button>Услуги</button>
-                <button>Контакты</button>
+                <a href="#services"><button>Услуги</button></a>
+                <a href="#contacts"><button>Контакты</button></a>
             </div>
     </section>
 
-    <section class="services">
-  <h2>Наши Услуги</h2>
-  <div class="cards">
-    <a href="#" class="card" style="background-image: url('img1.jpg');">
-      <div class="card-content">Ремонт велосипедов</div>
-    </a>
-    <a href="#" class="card" style="background-image: url('img2.jpg');">
-      <div class="card-content">Обслуживание</div>
-    </a>
-    <a href="#" class="card" style="background-image: url('img3.jpg');">
-      <div class="card-content">Возможность представить</div>
-    </a>
-  </div>
+    <section id="services" class="services">
+
+
+      <div class="cards">
+        <div class="card-wrapper">
+          <div class="card" data-id="1" style="background-image: url('img1.jpg');">
+            <div class="card-content">Ремонт велосипедов</div>
+          </div>
+          <div class="card-details">
+            <ul>
+              <li>Общая диагностика.</li>
+              <li>Мойка велосипеда.</li>
+              <li>Протяжка колёс.</li>
+              <li>Очистка трансмиссии без демонтажа прекелючателей, кассеты и системы.</li>
+              <li>Мойка цепи в УЗВ.</li>
+              <li>Смазка цепи.</li>
+              <li>Настройка переключателей и тормозов.=4200₽</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card-wrapper">
+          <div class="card" data-id="2" style="background-image: url('img2.jpg');">
+            <div class="card-content">Обслуживание</div>
+          </div>
+          <div class="card-details">
+            <ul>
+              <li>Тормоза</li>
+              <li>Переключатели</li>
+              <li>Вилки</li>
+              <li>Системы</li>
+              <li>Колеса</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card-wrapper">
+          <div class="card" data-id="3" style="background-image: url('img3.jpg');">
+            <div class="card-content">Индивидуальные услуги</div>
+          </div>
+          <div class="card-details">
+            <ul>
+              <li>Тормоза</li>
+              <li>Переключатели</li>
+              <li>Вилки</li>
+              <li>Системы</li>
+              <li>Колеса</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 </section>
 
     <section class="about">
-        <h2>Отзывы или написать что-то о компании</h2>
-        <div class="text-columns">
-        <div class="column">
-            <p>Современные технологии достигли такого уровня, что внедрение...</p>
-            <p>Модель организации деятельности позволяет выполнять важные...</p>
+  <h2>Отзывы о компании</h2>
+  <div class="reviews-wrapper">
+    <div class="review-card">
+      <div class="review-header">
+        <img src="avatar1.jpg" alt="Аватар" class="avatar" />
+        <div class="review-info">
+          <div class="name">Иван Иванов</div>
+          <div class="stars">★★★★★</div>
         </div>
-        <div class="column">
-            <p>Современные технологии достигли такого уровня, что внедрение...</p>
-            <p>Модель организации деятельности позволяет выполнять важные...</p>
-        </div>
-        </div>
-    </section>
+      </div>
+      <p class="review-text">
+        Отличный сервис! Быстро починили велосипед и дали рекомендации по обслуживанию. Очень доволен.
+      </p>
+    </div>
 
-    <section class="map">
+    <div class="review-card">
+      <div class="review-header">
+        <img src="avatar2.jpg" alt="Аватар" class="avatar" />
+        <div class="review-info">
+          <div class="name">Мария Смирнова</div>
+          <div class="stars">★★★★☆</div>
+        </div>
+      </div>
+      <p class="review-text">
+        Хорошее обслуживание, всё подробно объяснили. Немного пришлось подождать, но результат отличный.
+      </p>
+    </div>
+
+    <div class="review-card">
+      <div class="review-header">
+        <img src="avatar2.jpg" alt="Аватар" class="avatar" />
+        <div class="review-info">
+          <div class="name">Мария Смирнова</div>
+          <div class="stars">★★★★☆</div>
+        </div>
+      </div>
+      <p class="review-text">
+        Хорошее обслуживание, всё подробно объяснили. Немного пришлось подождать, но результат отличный.
+      </p>
+    </div>
+
+    <div class="review-card">
+      <div class="review-header">
+        <img src="avatar2.jpg" alt="Аватар" class="avatar" />
+        <div class="review-info">
+          <div class="name">Мария Смирнова</div>
+          <div class="stars">★★★★☆</div>
+        </div>
+      </div>
+      <p class="review-text">
+        Хорошее обслуживание, всё подробно объяснили. Немного пришлось подождать, но результат отличный.
+      </p>
+    </div>
+
+    <div class="review-card">
+      <div class="review-header">
+        <img src="avatar2.jpg" alt="Аватар" class="avatar" />
+        <div class="review-info">
+          <div class="name">Мария Смирнова</div>
+          <div class="stars">★★★★☆</div>
+        </div>
+      </div>
+      <p class="review-text">
+        Хорошее обслуживание, всё подробно объяснили. Немного пришлось подождать, но результат отличный.
+      </p>
+    </div>
+
+    <div class="review-card">
+      <div class="review-header">
+        <img src="avatar3.jpg" alt="Аватар" class="avatar" />
+        <div class="review-info">
+          <div class="name">Павел Юрьев</div>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+      <p class="review-text">
+        Всё супер! Очень вежливые сотрудники, быстрое обслуживание и приятные цены.
+      </p>
+    </div>
+  </div>
+</section>
+
+    <section  class="map">
         <div class="map-box">Карта</div>
     </section>
 
@@ -69,8 +176,11 @@
   
 
   <footer>
+    <div id="contacts" class="contacts">
+
+    </div>
     <p>Лицензия и номера<br>и оставить контакт</p>
   </footer>
-    
+    <script src="../js/script.js"></script>
 </body>
 </html>

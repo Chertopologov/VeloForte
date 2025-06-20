@@ -1,125 +1,133 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-}
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
 
-body, html {
-  height: 100%;
-  scroll-behavior: smooth;
-}
+  body, html {
+    height: 100%;
+    scroll-behavior: smooth;
+  }
 
-header {
-  background: #e0e0e0;
-  padding: 20px 40px;
-}
-.logo {
-  font-weight: bold;
-  font-size: 24px;
-}
-.top-bar {
+  header {
+    background: #e0e0e0;
+    padding: 20px 40px;
+  }
+  .logo {
+    font-weight: bold;
+    font-size: 24px;
+  }
+  .top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .right-block {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .icons {
+    display: flex;
+    gap: 10px;
+  }
+
+  .circle {
+    width: 14px;
+    height: 14px;
+    background: #555;
+    border-radius: 50%;
+  }
+
+  .contact {
+    font-size: 16px;
+  }
+
+  /* Hero/info block takes full screen */
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info {
+    height: calc(100vh - 100px); /* Full screen minus header height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #f2f2f2;
+    padding: 20px;
+  }
+
+  .info h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+
+  .info h2 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    max-width: 600px;
+  }
+
+  .nav-buttons {
+    display: flex;
+    gap: 20px;
+  }
+
+  .nav-buttons > a {
+    text-decoration: none;
+  }
+
+  .nav-buttons button {
+    padding: 14px 30px;
+    font-size: 16px;
+    border: 2px solid #555;
+    border-radius: 25px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .nav-buttons button:hover {
+    background: #555;
+    color: #fff;
+  }
+
+  /* Услуги */
+
+  .cards {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.right-block {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.icons {
-  display: flex;
-  gap: 10px;
-}
-
-.circle {
-  width: 14px;
-  height: 14px;
-  background: #555;
-  border-radius: 50%;
-}
-
-.contact {
-  font-size: 16px;
-}
-
-/* Hero/info block takes full screen */
-main {
-  display: flex;
-  flex-direction: column;
-}
-
-.info {
-  height: calc(100vh - 100px); /* Full screen minus header height */
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  background: #f2f2f2;
-  padding: 20px;
-}
-
-.info h1 {
-  font-size: 40px;
-  margin-bottom: 10px;
-}
-
-.info h2 {
-  font-size: 18px;
-  font-weight: 400;
-  margin-bottom: 30px;
-  max-width: 600px;
-}
-
-.nav-buttons {
-  display: flex;
-  gap: 20px;
-}
-
-.nav-buttons button {
-  padding: 14px 30px;
-  font-size: 16px;
-  border: 2px solid #555;
-  border-radius: 25px;
-  background: transparent;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.nav-buttons button:hover {
-  background: #555;
-  color: #fff;
-}
-
-/* Услуги */
-.services {
-  padding: 60px 20px;
-  text-align: center;
-  background: #fff;
-}
-
-.cards {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
+  gap: 80px;
   flex-wrap: wrap;
-  margin-top: 30px;
+  padding: 60px 20px;
+}
+
+.card-wrapper {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+  height: 90vh;
 }
 
 .card {
   position: relative;
-  display: block;
-  width: 300px;
-  height: 200px;
+  width: 100%;
+  height: 50vh;
   background-size: cover;
   background-position: center;
   border-radius: 12px;
   overflow: hidden;
-  text-decoration: none;
+  cursor: pointer;
   transition: transform 0.3s ease;
 }
 
@@ -131,7 +139,7 @@ main {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4); /* полупрозрачный тёмный фильтр */
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .card-content {
@@ -140,53 +148,133 @@ main {
   left: 20px;
   transform: translateY(-50%);
   color: #fff;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
   z-index: 1;
   text-align: left;
 }
 
-/* Отзывы / О компании */
-.about {
-  padding: 60px 20px;
+/* Выпадающее описание */
+.card-details {
+  max-height: 0;
+  overflow: hidden;
   background: #f9f9f9;
-  text-align: center;
+  border-radius: 8px;
+  margin-top: 12px;
+  padding: 0 12px;
+  transition: all 0.5s ease;
+  opacity: 0;
 }
 
-.text-columns {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  margin-top: 20px;
-  text-align: left;
-  flex-wrap: wrap;
+.card-wrapper.open .card-details {
+  max-height: 500px; /* достаточно для большого текста */
+  opacity: 1;
+  padding: 15px 12px;
 }
 
-.column {
-  width: 300px;
+  @media (max-width: 900px) {
+    .cards {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .card {
+      width: 90%;
+      min-width: unset;
+      height: 300px;
+    }
+  }
+
+  /* Отзывы / О компании */
+  .about {
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+  }
+
+  .about h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .reviews-wrapper {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .review-card {
+    flex: 0 0 300px;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .review-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .review-info .name {
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .review-info .stars {
+    color: #f5a623;
+    font-size: 14px;
+  }
+
+  .review-text {
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px;
+  }
+
+  @media (max-width: 768px) {
+  .reviews-wrapper {
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
 }
 
-/* Карта */
-.map {
-  padding: 60px 20px;
-  display: flex;
-  justify-content: center;
-  background: #eee;
-}
+  /* Карта */
+  .map {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    background: #eee;
+  }
 
-.map-box {
-  width: 90%;
-  height: 200px;
-  background: #ccc;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  .map-box {
+    width: 90%;
+    height: 200px;
+    background: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-/* Подвал */
-footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-  font-size: 14px;
-}
+  /* Подвал */
+  footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    font-size: 14px;
+  }
