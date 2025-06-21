@@ -188,13 +188,14 @@
 
   /* Отзывы / О компании */
   .about {
-    padding: 40px 20px;
+    padding: 100px 20px;
     background-color: #f8f8f8;
+    min-height: 40vh;
   }
 
   .about h2 {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
 
   .reviews-wrapper {
@@ -255,26 +256,139 @@
 }
 
   /* Карта */
+.map {
+  padding: 100px 40px;
+  display: flex;
+  justify-content: center;
+  gap: 100px; /* Больше расстояние между картами */
+  background: #eee;
+  flex-wrap: wrap;
+}
+
+.map-box {
+  position: relative;
+  width: 600px;  /* Шире */
+  height: 600px; /* Выше */
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.map-box:hover {
+  transform: scale(1.02);
+}
+
+.map-box iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  filter: blur(2px) brightness(0.9);
+  transition: filter 0.4s ease;
+  pointer-events: none; /* чтобы iframe не блокировал клик по ссылке */
+}
+
+.map-box:hover iframe {
+  filter: blur(0px) brightness(1);
+}
+
+.map-address {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.85);
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  pointer-events: none; /* не мешает клику по ссылке */
+}
+
+@media (max-width: 900px) {
   .map {
-    padding: 60px 20px;
-    display: flex;
-    justify-content: center;
-    background: #eee;
+    flex-direction: column;
+    align-items: center;
   }
 
   .map-box {
     width: 90%;
-    height: 200px;
-    background: #ccc;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 350px;
   }
+}
 
   /* Подвал */
   footer {
-    padding: 20px;
+  background-color: #222;
+  color: #fff;
+  padding: 40px 20px;
+  font-size: 14px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  gap: 30px;
+}
+
+.footer-contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer-phoe {
+  padding-right: 40px;
+}
+
+.footer-contacts h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-contacts a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-contacts a:hover {
+  text-decoration: underline;
+}
+
+.footer-icons {
+  margin-top: 10px;
+  display: flex;
+  gap: 15px;
+}
+
+.footer-icons img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
+}
+
+.footer-icons img:hover {
+  transform: scale(1.1);
+}
+
+.footer-license {
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    background: #ddd;
-    font-size: 14px;
   }
+
+  .footer-license {
+    text-align: center;
+  }
+}

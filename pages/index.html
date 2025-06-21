@@ -37,7 +37,7 @@
       <div class="cards">
         <div class="card-wrapper">
           <div class="card" data-id="1" style="background-image: url('img1.jpg');">
-            <div class="card-content">Ремонт велосипедов</div>
+            <div class="card-content">ТО</div>
           </div>
           <div class="card-details">
             <ul>
@@ -54,7 +54,7 @@
 
         <div class="card-wrapper">
           <div class="card" data-id="2" style="background-image: url('img2.jpg');">
-            <div class="card-content">Обслуживание</div>
+            <div class="card-content">Ремонт</div>
           </div>
           <div class="card-details">
             <ul>
@@ -69,7 +69,7 @@
 
         <div class="card-wrapper">
           <div class="card" data-id="3" style="background-image: url('img3.jpg');">
-            <div class="card-content">Индивидуальные услуги</div>
+            <div class="card-content">Сборка</div>
           </div>
           <div class="card-details">
             <ul>
@@ -167,20 +167,60 @@
   </div>
 </section>
 
-    <section  class="map">
-        <div class="map-box">Карта</div>
-    </section>
+<section class="map">
+  <a
+    href="https://yandex.ru/maps/?pt=37.677661,55.789143&z=16"
+    target="_blank"
+    class="map-box"
+  >
+    <iframe
+      src="https://yandex.ru/map-widget/v1/?pt=37.677661,55.789143&z=16"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+    <div class="map-address">Москва, Сокольническая пл., 4 к1/2</div>
+  </a>
+
+  <a
+    href="https://yandex.ru/maps/?pt=37.865409,55.629221&z=16"
+    target="_blank"
+    class="map-box"
+  >
+    <iframe
+      src="https://yandex.ru/map-widget/v1/?pt=37.865409,55.629221&z=16"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+    <div class="map-address">г. Дзержинский, ул. Лесная, 18</div>
+  </a>
+</section>
 
   </main>
 
-  
-
   <footer>
-    <div id="contacts" class="contacts">
-
+  <div id="contacts" class="footer-container">
+    <div class="footer-contacts">
+      <div class="footer-phone">
+        <h3>Контакты</h3>
+        <p>Телефон: <a href="tel:+79991234567">+7 (999) 123-45-67</a></p>
+        <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+      </div>
+      <div class="footer-icons">
+        <a href="https://t.me/ваш_ник" target="_blank" aria-label="Telegram">
+          <img src="icons/telegram.svg" alt="Telegram" />
+        </a>
+        <a href="https://wa.me/79991234567" target="_blank" aria-label="WhatsApp">
+          <img src="icons/whatsapp.svg" alt="WhatsApp" />
+        </a>
+      </div>
     </div>
-    <p>Лицензия и номера<br>и оставить контакт</p>
-  </footer>
+
+    <div class="footer-license">
+      <p>© 2025 VeloForte</p>
+      <p>Лицензия № 12345678</p>
+    </div>
+  </div>
+</footer>
     <script src="../js/script.js"></script>
 </body>
 </html>
