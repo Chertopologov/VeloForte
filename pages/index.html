@@ -1,281 +1,253 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ремонт велосипедов и самокатов в Москве">
     <meta name="keywords" content="велосипеды, ремонт, самокаты, обслуживание">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://yandex.ru; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://yandex.ru; font-src 'self'; frame-src 'self' https://yandex.ru;">
     <link rel="stylesheet" href="../style/reset.css">
     <link rel="stylesheet" href="../style/style.css">
     <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
     <link rel="preload" href="../fonts/BebasNeue-Regular.ttf" as="font" type="font/ttf" crossorigin>
-    <title>veloforte</title>
+    <title>VeloForte - ремонт велосипедов и самокатов</title>
 </head>
-<body> 
-  <div class="container">
-   <header>
-      <div class="top-bar">
-        <div class="logo">VeloForte</div>
-        <a class="header-button" href="#contacts">Связаться</a> 
-  </header>
-  <main>
-    <section class="info">
-    <div class="info-content">
-      <h1>ГОТОВ К ДОРОГЕ?</h1>
-      <h2>Ремонт велосипедов и самокатов</h2>
-      <div class="nav-buttons">
-        <a href="#services"><button>Услуги</button></a>
-      </div>
+<body>
+    <div class="container">
+        <header>
+            <div class="top-bar">
+                <div class="logo">VeloForte</div>
+                <a class="header-button" href="#contacts">Связаться</a>
+            </div>
+        </header>
+        
+        <main>
+            <section class="info">
+                <div class="info-content">
+                    <h1>ГОТОВ К ДОРОГЕ?</h1>
+                    <h2>Ремонт велосипедов и самокатов</h2>
+                    <div class="nav-buttons">
+                        <a href="#services" class="nav-button">Услуги</a>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="about">
+                <div class="about-content">
+                    <h2>О НАС</h2>
+                    <div class="about-grid">
+                        <div class="about-row">
+                            <div class="about-card">
+                                <img src="../images/путь.svg" alt="Локация" loading="lazy">
+                                <p>Мастерские расположены близко к метро</p>
+                            </div>
+                            <div class="about-card">
+                                <img src="../images/время.svg" alt="Часы" loading="lazy">
+                                <p>Работаем 7 дней в неделю и даже по праздникам</p>
+                            </div>
+                            <div class="about-card">
+                                <img src="../images/запчасти.svg" alt="Запчасти" loading="lazy">
+                                <p>В наличии большое количество запчастей и аксессуаров</p>
+                            </div>
+                            <div class="about-card">
+                                <img src="../images/качество.svg" alt="Качество" loading="lazy">
+                                <p>Максимально быстро и качественно</p>
+                            </div>
+                            <div class="about-card">
+                                <img src="../images/цены.svg" alt="Цены" loading="lazy">
+                                <p>Запчасти и аксессуары по очень вкусным ценам</p>
+                            </div>
+                            <div class="about-card">
+                                <img src="../images/сотрудники.svg" alt="Мастера" loading="lazy">
+                                <p>Все мастера с большим опытом</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="services" class="services">
+                <h2 class="section-title">УСЛУГИ</h2>
+                <div class="services-row">
+                    <div class="service-card">
+                        <div class="service-header">
+                            <img src="../images/mingcute_screwdriver-fill.svg" alt="Ремонт" loading="lazy">
+                            <h3>РЕМОНТ</h3>
+                        </div>
+                        <div class="service-content">
+                            <ul>
+                                <li>Тормоза</li>
+                                <li>Переключатели</li>
+                                <li>Вилки</li>
+                                <li>Системы</li>
+                                <li>Втулки</li>
+                                <li>Каретки</li>
+                                <li>Цепи</li>
+                                <li>Педали</li>
+                                <li>Колеса</li>
+                                <li>Шиномонтажные работы</li>
+                                <li>Установка аксессуаров</li>
+                                <li class="price">Не является публичной оффертой</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-header">
+                            <img src="../images/ic_round-pedal-bike.svg" alt="Сборка" loading="lazy">
+                            <h3>СБОРКА</h3>
+                        </div>
+                        <div class="service-content">
+                            <ul>
+                                <li>Сборка велосипеда с протяжкой всех узлов</li>
+                                <li>Протяжка колёс</li>
+                                <li>Мойка цепи от консерванта и смазка</li>
+                                <li>Настройка трансмиссии и тормозов</li>
+                                <li>Настройка посадки, элементов управления и тормозов</li>
+                                <li class="price">4000₽</li>
+                                <li class="price">Не является публичной оффертой</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-header">
+                            <img src="../images/game-icons_auto-repair.svg" alt="Техобслуживание" loading="lazy">
+                            <h3>ТО</h3>
+                        </div>
+                        <div class="service-content">
+                            <ul>
+                                <li>Общая диагностика</li>
+                                <li>Мойка велосипеда</li>
+                                <li>Проверка состояние трансмиссии</li>
+                                <li>Настройка переключателей</li>
+                                <li>Проверка состояние тормозов</li>
+                                <li>Настройка тормозов</li>
+                                <li>Обслуживание каретки, втулок</li>
+                                <li>Мойка цепи и смазка цепи</li>
+                                <li>Подкачка колес</li>
+                                <li class="price">4200₽</li>
+                                <li class="price">Не является публичной оффертой</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <button id="scrollToTop" class="scroll-top-btn" aria-label="Наверх">↑</button>
+            
+            <section class="reviews">
+                <div class="reviews-container">
+                    <h2>Отзывы о компании</h2>
+                    <div class="reviews-grid">
+                        <div class="reviews-column">
+                            <div class="review-card">
+                                <div class="review-header">
+                                    <div class="avatar-frame">
+                                        <img src="../images/User.svg" alt="Аватар" class="avatar" loading="lazy">
+                                    </div>
+                                    <div class="review-info">
+                                        <div class="name">Иван Иванов</div>
+                                        <div class="stars" aria-label="5 звезд">★★★★★</div>
+                                    </div>
+                                </div>
+                                <p class="review-text">
+                                    Отличный сервис! Быстро починили велосипед и дали рекомендации по обслуживанию. Очень доволен.
+                                </p>
+                            </div>
+                            <div class="review-card">
+                                <div class="review-header">
+                                    <div class="avatar-frame">
+                                        <img src="../images/User.svg" alt="Аватар" class="avatar" loading="lazy">
+                                    </div>
+                                    <div class="review-info">
+                                        <div class="name">Мария Смирнова</div>
+                                        <div class="stars" aria-label="5 звезд">★★★★★</div>
+                                    </div>
+                                </div>
+                                <p class="review-text">
+                                    Хорошее обслуживание, всё подробно объяснили. Немного пришлось подождать, но результат отличный.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="reviews-column">
+                            <div class="review-card">
+                                <div class="review-header">
+                                    <div class="avatar-frame">
+                                        <img src="../images/User.svg" alt="Аватар" class="avatar" loading="lazy">
+                                    </div>
+                                    <div class="review-info">
+                                        <div class="name">Павел Юрьев</div>
+                                        <div class="stars" aria-label="5 звезд">★★★★★</div>
+                                    </div>
+                                </div>
+                                <p class="review-text">
+                                    Всё супер! Очень вежливые сотрудники, быстрое обслуживание и приятные цены.
+                                </p>
+                            </div>
+                            <div class="review-card">
+                                <div class="review-header">
+                                    <div class="avatar-frame">
+                                        <img src="../images/User.svg" alt="Аватар" class="avatar" loading="lazy">
+                                    </div>
+                                    <div class="review-info">
+                                        <div class="name">Алексей Ковалев</div>
+                                        <div class="stars" aria-label="5 звезд">★★★★★</div>
+                                    </div>
+                                </div>
+                                <p class="review-text">
+                                    Отремонтировали велосипед за один день, качество работы на высоте. Буду рекомендовать друзьям!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="map">
+                <div class="map-container">
+                    <a href="https://yandex.ru/maps/?pt=37.865409,55.629221&z=16" target="_blank" rel="noopener noreferrer" class="map-box">
+                        <iframe src="https://yandex.ru/map-widget/v1/?pt=37.865409,55.629221&z=16" frameborder="0" allowfullscreen sandbox="allow-scripts allow-same-origin" title="Карта мастерской в Дзержинском" loading="lazy"></iframe>
+                        <div class="map-address">г. Дзержинский, ул. Лесная, 18</div>
+                    </a>
+                    <a href="https://yandex.ru/maps/?pt=37.677661,55.789143&z=16" target="_blank" rel="noopener noreferrer" class="map-box">
+                        <iframe src="https://yandex.ru/map-widget/v1/?pt=37.677661,55.789143&z=16" frameborder="0" allowfullscreen sandbox="allow-scripts allow-same-origin" title="Карта мастерской в Москве" loading="lazy"></iframe>
+                        <div class="map-address">Москва, Сокольническая пл., 4 к1/2</div>
+                    </a>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <div id="contacts" class="footer-container">
+                <div class="footer-left">
+                    <h3>Контакты</h3>
+                    <div class="footer-phones">
+                        <p><a href="tel:+79850546217">+7 (985) 054-62-17</a></p>
+                        <p><a href="tel:+79160678492">+7 (916) 067-84-92</a></p>
+                    </div>
+                </div>
+                <div class="footer-center">
+                    <div class="footer-icons">
+                        <a href="https://t.me/veloforte" target="_blank" rel="noopener noreferrer" aria-label="Telegram" class="icon-frame">
+                            <img src="../images/Telegram App.svg" alt="Telegram" loading="lazy">
+                        </a>
+                        <a href="https://wa.me/79160678492" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="icon-frame">
+                            <img src="../images/WhatsApp.svg" alt="WhatsApp" loading="lazy">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-copyright">
+                        <p>© 2025 VeloForte</p>
+                        <p>Копирование запрещено</p>
+                    </div>
+                    <div class="footer-author">
+                        <p>by chertopologov</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
-  </section>
-  <section class="about">
-  <div class="about-content">
-    <h2>О НАС</h2>
-    <div class="about-grid">
-      <div class="about-row top-row">
-        <div class="about-card">
-          <img src="../images/путь.svg" alt="">
-          <p>Мастерские расположены близко к метро</p>
-        </div>
-        <div class="about-card">
-          <img src="../images/время.svg" alt="">
-          <p>Работаем 7 дней в неделю и даже по праздникам</p>
-        </div>
-        <div class="about-card">
-          <img src="../images/запчасти.svg" alt="">
-          <p>В наличии большое количество запчастей и аксессуаров</p>
-        </div>
-        <div class="about-card">
-          <img src="../images/качество.svg" alt="">
-          <p>Максимально быстро и качественно</p>
-        </div>
-      </div>
-      <div class="about-row bottom-row">
-        <div class="about-card">
-          <img src="../images/цены.svg" alt="">
-          <p>Запчасти и аксессуары по очень вкусным ценам</p>
-        </div>
-        <div class="about-card">
-          <img src="../images/сотрудники.svg" alt="">
-          <p>Все мастера с большим опытом</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-  <section id="services" class="services">
-  <h2 class="section-title">УСЛУГИ</h2>
-  <div class="services-row">
-    <div class="service-card">
-      <div class="service-header">
-        <img src="../images/mingcute_screwdriver-fill.svg" alt="">
-        <h3>РЕМОНТ</h3>
-      </div>
-      <div class="service-content">
-        <ul>
-          <li>Тормоза</li>
-          <li>Переключатели</li>
-          <li>Вилки</li>
-          <li>Системы</li>
-          <li>Колеса</li>
-        </ul>
-      </div>
-    </div>
-    <div class="service-card">
-      <div class="service-header">
-        <img src="../images/ic_round-pedal-bike.svg" alt="">
-        <h3>СБОРКА</h3>
-      </div>
-      <div class="service-content">
-        <ul>
-          <li>Сборка велосипеда с протяжкой всех узлов.</li>
-          <li>Протяжка колёс.</li>
-          <li>Мойка цепи от консерванта и смазка парафином или масляной смазкой.</li>
-          <li>Настройка трансмиссии и тормозов.</li>
-          <li>Настройка посадки, элементов управления и тормозов.</li>
-          <li class="price">4000₽</li>
-        </ul>
-      </div>
-    </div>
-    <div class="service-card">
-      <div class="service-header">
-        <img src="../images/game-icons_auto-repair.svg" alt="asd">
-        <h3>ТО</h3>
-      </div>
-      <div class="service-content">
-        <ul>
-          <li>Общая диагностика</li>
-          <li>Мойка велосипеда</li>
-          <li>Протяжка колёс</li>
-          <li>Очистка трансмиссии</li>
-          <li>Смазка цепи</li>
-          <li>Настройка переключателей</li>
-          <li>Мойка цепи в УЗВ</li>
-          <li class="price">4200₽</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-<button id="scrollToTop" class="scroll-top-btn">↑</button>
-    <section class="reviews">
-  <div class="reviews-container">
-    <h2>Отзывы о компании</h2>
-    <div class="reviews-grid">
-      <div class="reviews-column">
-        <div class="review-card">
-          <div class="review-header">
-            <div class="avatar-frame">
-              <img src="../images/User.svg" alt="Аватар" class="avatar" />
-            </div>
-            <div class="review-info">
-              <div class="name">Иван Иванов</div>
-              <div class="stars">★★★★★</div>
-            </div>
-          </div>
-          <p class="review-text">
-            Отличный сервис! Быстро починили велосипед и дали рекомендации по обслуживанию. Очень доволен.
-          </p>
-        </div>
-        <div class="review-card">
-          <div class="review-header">
-            <div class="avatar-frame">
-              <img src="../images/User.svg" alt="Аватар" class="avatar" />
-            </div>
-            <div class="review-info">
-              <div class="name">Мария Смирнова</div>
-              <div class="stars">★★★★★</div>
-            </div>
-          </div>
-          <p class="review-text">
-            Хорошее обслуживание, всё подробно объяснили. Немного пришлось подождать, но результат отличный.
-          </p>
-        </div>
-        <div class="review-card">
-          <div class="review-header">
-            <div class="avatar-frame">
-              <img src="../images/User.svg" alt="Аватар" class="avatar" />
-            </div>
-            <div class="review-info">
-              <div class="name">Мария Смирнова</div>
-              <div class="stars">★★★★★</div>
-            </div>
-          </div>
-          <p class="review-text">
-            Хорошее обслуживание, всё подробно объяснили. Немного пришлось подождать, но результат отличный.
-          </p>
-        </div>
-      </div>
-      <div class="reviews-column">
-        <div class="review-card">
-          <div class="review-header">
-            <div class="avatar-frame">
-              <img src="../images/User.svg" alt="Аватар" class="avatar" />
-            </div>
-            <div class="review-info">
-              <div class="name">Мария Смирнова</div>
-              <div class="stars">★★★★★</div>
-            </div>
-          </div>
-          <p class="review-text">
-            Хорошее обслуживание, всё подробно объяснили. Немного пришлось подождать, но результат отличный.
-          </p>
-        </div>
-        <div class="review-card">
-          <div class="review-header">
-            <div class="avatar-frame">
-              <img src="../images/User.svg" alt="Аватар" class="avatar" />
-            </div>
-            <div class="review-info">
-              <div class="name">Мария Смирнова</div>
-              <div class="stars">★★★★★</div>
-            </div>
-          </div>
-          <p class="review-text">
-            Хорошее обслуживание, всё подробно объяснили. Немного пришлось подождать, но результат отличный.
-          </p>
-        </div>
-        <div class="review-card">
-          <div class="review-header">
-            <div class="avatar-frame">
-              <img src="../images/User.svg" alt="Аватар" class="avatar" />
-            </div>
-            <div class="review-info">
-              <div class="name">Павел Юрьев</div>
-              <div class="stars">★★★★★</div>
-            </div>
-          </div>
-          <p class="review-text">
-            Всё супер! Очень вежливые сотрудники, быстрое обслуживание и приятные цены.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="map">
-  <div class="map-container">
-    <a
-      href="https://yandex.ru/maps/?pt=37.677661,55.789143&z=16"
-      target="_blank"
-      class="map-box"
-    >
-          <iframe
-      src="https://yandex.ru/map-widget/v1/?pt=37.677661,55.789143&z=16"
-      frameborder="0"
-      allowfullscreen
-      sandbox="allow-scripts allow-same-origin"
-    ></iframe>
-
-      <div class="map-address">Москва, Сокольническая пл., 4 к1/2</div>
-    </a>
-
-    <a
-      href="https://yandex.ru/maps/?pt=37.865409,55.629221&z=16"
-      target="_blank"
-      class="map-box"
-    >
-          <iframe
-      src="https://yandex.ru/map-widget/v1/?pt=37.865409,55.629221&z=16"
-      frameborder="0"
-      allowfullscreen
-      sandbox="allow-scripts allow-same-origin"
-    ></iframe>
-      <div class="map-address">г. Дзержинский, ул. Лесная, 18</div>
-    </a>
-  </div>
-</section>
-  </main>
-  <footer>
-  <div id="contacts" class="footer-container">
-    <div class="footer-left">
-      <h3>Контакты</h3>
-      <div class="footer-phones">
-        <p><a href="tel:+79991234567">+7 (999) 123-45-67</a></p>
-        <p><a href="tel:+79998765432">+7 (999) 876-54-32</a></p>
-      </div>
-    </div>
-    <div class="footer-center">
-      <div class="footer-icons">
-        <a href="https://t.me/ваш_ник" target="_blank" aria-label="Telegram" class="icon-frame">
-          <img src="../images/Telegram App.svg" alt="Telegram" />
-        </a>
-        <a href="https://wa.me/79991234567" target="_blank" aria-label="WhatsApp" class="icon-frame">
-          <img src="../images/WhatsApp.svg" alt="WhatsApp" />
-        </a>
-      </div>
-    </div>
-    <div class="footer-right">
-      <div class="footer-copyright">
-        <p>© 2025 VeloForte</p>
-        <p>Копирование запрещено</p>
-      </div>
-      <div class="footer-author">
-        <p>by chertopologov</p>
-      </div>
-    </div>
-  </div>
-</footer>
-    <script src="../js/script.js"></script>
+    
+    <script src="../js/script.js" defer></script>
 </body>
 </html>
