@@ -15,21 +15,21 @@ scrollBtn.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-const contactBtn = document.getElementById("contactBtn");
-const modal = document.getElementById("contactModal");
-const closeBtn = document.querySelector(".close-btn");
 
-contactBtn.addEventListener("click", () => {
-  modal.style.display = "flex";
-});
-
-closeBtn.addEventListener("click", () => {
-  modal.style.display = "none";
-});
-
-// Закрытие при клике вне модалки
-window.addEventListener("click", (e) => {
-  if (e.target === modal) {
-    modal.style.display = "none";
-  }
+document.addEventListener('DOMContentLoaded', function() {
+  const serviceCards = document.querySelectorAll('.service-card');
+  
+  serviceCards.forEach(card => {
+    card.addEventListener('click', function() {
+      // Закрываем все другие открытые карточки
+      serviceCards.forEach(otherCard => {
+        if (otherCard !== card && otherCard.classList.contains('active')) {
+          otherCard.classList.remove('active');
+        }
+      });
+      
+      // Переключаем текущую карточку
+      this.classList.toggle('active');
+    });
+  });
 });
