@@ -70,3 +70,26 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+// Автоматическая прокрутка фото
+function setupPhotoSlider() {
+  const slider = document.querySelector('.photo-slider');
+  const slides = document.querySelectorAll('.slide');
+  
+  // Дублируем слайды для бесконечной прокрутки
+  if (slider && slides.length > 0) {
+    slider.innerHTML = slider.innerHTML + slider.innerHTML;
+  }
+  
+  // Пауза при наведении
+  slider.addEventListener('mouseenter', () => {
+    slider.style.animationPlayState = 'paused';
+  });
+  
+  slider.addEventListener('mouseleave', () => {
+    slider.style.animationPlayState = 'running';
+  });
+}
+
+// Вызываем функцию после загрузки DOM
+document.addEventListener('DOMContentLoaded', setupPhotoSlider);
